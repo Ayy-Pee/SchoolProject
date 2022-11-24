@@ -5,21 +5,24 @@ public class XYZCompany
    {
        Scanner sc = new Scanner(System.in);
        System.out.println("Enter product price");
-       int price = sc.nextInt();
+       double price = sc.nextInt();
        System.out.println("Enter the number of units sold");
        int unit = sc.nextInt();
-       int amt = price*unit;
+       double amt = price*unit;
        float dis = 0.0f;
-       if(unit>=100000)
+       if(amount>=100000)
            dis = 7.5f;
-       if(unit>=50000)
+       else if(amount>=50000)
            dis = 5;
-       if(unit>=25000)
+       else if(amount>=25000)
            dis = 3.5f;
-       if(unit>=10000)
+       else if(unit>=10000)
            dis = 2.0f;
        else
            dis = 1.0f;    
        double dis_amt=amt-((dis/100)*amt);
+       System.out.println("Amount: "+amt);
+       System.out.println("Discount: "+dis);
+       System.out.println(Discounted amount: "+dis_amt);
    }
 }
