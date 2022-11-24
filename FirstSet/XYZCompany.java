@@ -23,6 +23,6 @@ public class XYZCompany
        double dis_amt=amt-((dis/100)*amt);
        System.out.println("Amount: "+amt);
        System.out.println("Discount: "+dis);
-       System.out.println(Discounted amount: "+dis_amt);
+       System.out.println("Discounted amount: "+dis_amt);
    }
 }
