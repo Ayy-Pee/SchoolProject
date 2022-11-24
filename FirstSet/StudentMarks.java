@@ -1,4 +1,4 @@
-import java.util.Scanner;
+mport java.util.Scanner;
 public class StudentMarks
 {
     public static void main(String[]args){
@@ -9,15 +9,11 @@ public class StudentMarks
         String cls = sc.nextLine();
         System.out.println("Enter student's Roll number.");
         String roll = sc.nextLine();
-        System.out.println("Enter Marks of Subject 1");
+        System.out.println("Enter Marks of 5 Subject");
         float m1 = sc.nextFloat();
-        System.out.println("Enter Marks of Subject 2");
         float m2 = sc.nextFloat();
-        System.out.println("Enter Marks of Subject 3");
         float m3 = sc.nextFloat();
-        System.out.println("Enter Marks of Subject 4");
         float m4 = sc.nextFloat();
-        System.out.println("Enter Marks of Subject 5");
         float m5 = sc.nextFloat();
         float total = m1+m2+m3+m4+m5;
         float per = (total/500)*100;
@@ -32,5 +28,11 @@ public class StudentMarks
             grade = 'D';
         else
             grade = 'E';
+        System.out.println("Name: "+nm);
+        System.out.println("Class: "+cls);
+        System.out.println("Roll number: "+roll);
+        System.out.println("Total marks: "+total);
+        System.out.println("Percentage: "+per);
+        System.out.println("Grade: "+grade);
     }
 }
