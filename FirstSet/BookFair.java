@@ -15,7 +15,7 @@ class BookFair
         else if(price>3000)
             dis = 15.5f;
         float dis_price=price-((dis/100)*price);
-        System.out.println("Shop name: "+nm);
+        System.out.println("Store name: "+nm);
         System.out.println("Price after discount is: "+dis_price);
     }
 }
