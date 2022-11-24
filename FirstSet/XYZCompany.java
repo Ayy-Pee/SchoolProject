@@ -10,13 +10,13 @@ public class XYZCompany
        int unit = sc.nextInt();
        double amt = price*unit;
        float dis = 0.0f;
-       if(amount>=100000)
+       if(amt>=100000)
            dis = 7.5f;
-       else if(amount>=50000)
+       else if(amt>=50000)
            dis = 5;
-       else if(amount>=25000)
+       else if(amt>=25000)
            dis = 3.5f;
-       else if(unit>=10000)
+       else if(amt>=10000)
            dis = 2.0f;
        else
            dis = 1.0f;    
