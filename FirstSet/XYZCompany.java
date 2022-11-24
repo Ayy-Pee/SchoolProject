@@ -5,7 +5,7 @@ public class XYZCompany
    {
        Scanner sc = new Scanner(System.in);
        System.out.println("Enter product price");
-       double price = sc.nextInt();
+       double price = sc.nextDouble();
        System.out.println("Enter the number of units sold");
        int unit = sc.nextInt();
        double amt = price*unit;
